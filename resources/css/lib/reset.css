@@ -18,6 +18,23 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 [tabindex="-1"]:focus-visible { outline: 0 !important; }
 ul, ol, li, dl, dt, dd  { list-style:none; margin:0; padding:0; box-sizing: border-box; }
 
+label { display: inline-block; font-size:1rem; line-height:1.188rem; color:var(--normal); }
+.dp-none { display:none; }
+legend, caption{width:0; height:0; text-indent:-10000px; font-size:0; line-height:0; position:absolute; left:-99999px; }
+a { /* color: #007bff; */ color:var(--normal); text-decoration:none; background-color:transparent; }
+img,
+svg { vertical-align:middle; border-style:none; }
+table { border-collapse:collapse; border-spacing:0; width:100%; }
+.line { border: 1px solid var(--border2); border-radius:5px; background-color: var(--white); padding:10px; }
+.type-spread { margin:0 -20px; }
+.revert-type-spread { margin:0 20px; }
+.essential { color:var(--subtitle); }
+.essential::after { content:"*"; color:var(--error); padding-left:3px; }
+.flex { display:flex !important; }
+.mb0 { margin-bottom:0 !important; }
+.mt14 { margin-top:14px !important; }
+.sr-only { position:absolute; margin:-1px; padding: 0; width:1px; height:1px; border: 0; overflow: hidden; clip: rect(0, 0, 0, 0); }
+
 /* font */
 /** Pretendard **/
 @font-face {
