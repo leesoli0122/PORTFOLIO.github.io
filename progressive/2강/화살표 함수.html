@@ -3,21 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>재활용할 수 있는 블록 함수</title>
+    <title>화살표 함수</title>
+    <script src=""></script>
 </head>
 <body>
     <script>
-        // 선언식 표현식
-        fnSayHello();
-        function fnSayHello() {
-            console.log("함수 선언식");
-        }
-
-        const fnSayHello2 = function(){
-            console.log("함수 표현식");
-        }
-        fnSayHello2();
-
         // 화살표 함수
         const fnPlusNumbers = function(pNum1, pNum2){
             return pNum1 + pNum2;
@@ -37,9 +27,6 @@
 
         const fnPlusNumbers5 = () => '안녕하세요';
         console.log(fnPlusNumbers5());//안녕하세요
-
-        //모듈 내보내기와 가져오기
-        
     </script>
 </body>
 </html>
