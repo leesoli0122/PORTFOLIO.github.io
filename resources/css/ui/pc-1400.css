@@ -1,1 +1,53 @@
-.header-wrap {  display:flex; max-width:1400px; width:100%; margin:0 auto; border:1px solid red; }
+:root {
+    --font12:0.75rem;
+    --font14:0.875rem;
+    --font16:1rem;
+    --font18:1.125rem;
+    --font20:1.25rem;
+    --font22:1.375rem;
+    --font24:1.5rem;
+    --font28:1.75rem;
+    --font32:2rem;
+    --font40:2.5rem;
+    --font50:3.125rem;
+    
+    --w-regular:400;
+    --w-bold:700;
+
+    --white:#FFFFFF;
+    --title:#111111;
+    --normal:#333333;
+    --inactive:#666666;
+    --subtitle:#757575;
+    --error:#FF0000;
+
+    --border1:#DDDDDD;
+    --border2: #cccccc;
+    --border3: #EDEDED;
+
+    --primary:#0F3862;
+    --secondary: #056ED6;
+
+    --tag1:#E62348;
+    --tag2:#802CE3;
+
+    --background1:#EAEAEA;
+    --background2:#F8F8F8;
+    --background3:#5474c0;
+}
+
+/*********************************************************************
+header-wrap #헤더
+*********************************************************************/
+#headerWrap { backdrop-filter: blur(10px); }
+.header-wrap { display:flex; align-items:center; margin:0 auto; max-width:1400px; }
+.header-wrap .logo { width:50px; height:50px; }
+.header-wrap .logo img { width:100%; height:100%; border-radius:50%; }
+.header-wrap .nav .menu-wrap li a { font-size:var(--font16); color:var(--white); }
+/*********************************************************************
+content #컨텐츠
+*********************************************************************/
+section { width:100%; height:100%; }
+section > .inner { margin:0 auto; max-width:1400px; }
+
+.section1 { width:100%; height:800px; background-color:var(--title); }
