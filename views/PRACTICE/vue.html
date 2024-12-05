@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+
+    <link rel="stylesheet" type="text/css" href="./resources/css/lib/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./resources/css/ui/common.css" />
+
+    <script src="./resources/js/lib/jquery-1.9.1.min.js"></script>
+    <script src="./resources/js/lib/gsap.min.js"></script>
+    <script src="./resources/js/vue.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div id="app">{{message}}</div>
+    </div>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                message: "Hello Vue!",
+            }
+        })
+    </script>
+</body>
+</html>
