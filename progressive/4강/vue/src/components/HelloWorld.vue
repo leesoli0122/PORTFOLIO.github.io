@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>안녕하세요!</h2>
+    <button @click="increment">Counter: {{ counter }}</button>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -36,7 +37,20 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+  data() {
+		return {
+			counter: 0,
+		};
+	},
+	methods: {
+		increment() {
+			this.counter++;
+		},
+	},
+	mounted() {
+		console.log('애플리케이션이 마운트 되었습니다!');
+	},
 }
 </script>
 
