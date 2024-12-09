@@ -15,7 +15,7 @@ skipnavi #스킵네비
 header-wrap #헤더
 *********************************************************************/
 #headerWrap { position:fixed; top:0; z-index:200; width:100%; }
-.header-wrap { padding:0 20px; width:100%; height:70px; }
+.header-wrap { padding:0 20px; width:100%; }
 .header-wrap .nav .menu-wrap li { display:inline-block; }
 
 /*********************************************************************

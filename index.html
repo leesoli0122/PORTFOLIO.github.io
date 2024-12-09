@@ -13,19 +13,23 @@
     <script src="./resources/js/vue.js"></script>
 </head>
 <body>
+    <div id="skipnavi">
+        <script>
+            $(document).ready(function () {
+                $("#skipnavi").load("./views/INCLUDE/inc_skipnavi.html");
+            });
+        </script>
+    </div>
     <div class="wrap">
-        <header>
-            <div class="logo">
-                <img src="./resources/images/profile.png" alt="로고 이미지">
-            </div>
-            <nav class="gnb">
-                <a href="#none">home</a>
-                <a href="#none">about</a>
-                <a href="#none">portfolio</a>
-                <a href="#none">contact</a>
-            </nav>
-            <div class="mode"></div>
+        <!-- s:header -->
+        <header id="headerWrap">
+            <script>
+                $(document).ready(function () {
+                    $("#headerWrap").load("./views/INCLUDE/inc_header.html");
+                });
+            </script>
         </header>
+        <!-- //e:header -->
         <section>
             <ul class="link-wrap">
                 <li class="link"><a href="./views/PRACTICE/Neon-typing-effect.html">네온 타이핑 이펙트</a></li>
