@@ -83,18 +83,12 @@ section > .inner { margin:0 auto; max-width:1400px; width:100%; height:100%; }
 .mouse .wheele::before { content:""; position:absolute; top:50%; left:50%; transform:translate(-50%, -90%); display:inline-block; width:4px; height:12px; border-radius:30px; background:#fff; animation: wheele 1.5s linear infinite; }
 .mouse span { line-height:2; font-size:14px; color:#fff; }
 
-@keyframes wheele {
-	0% {
-		margin-top: 0;
-	}
-	50% {
-		margin-top: 10px;
-	}
-	100% {
-		margin-top: 0;
-	}
-}
-
+/*********************************************************************
+    keyframes #키프레임
+*********************************************************************/
+/*---------------------------------------------
+	section1
+---------------------------------------------*/
 @keyframes bounce {
     0%, 100% {
       transform: scale(1);
@@ -108,4 +102,16 @@ section > .inner { margin:0 auto; max-width:1400px; width:100%; height:100%; }
     70% {
       transform: scale(1.05);
     }
+}
+
+@keyframes wheele {
+	0% {
+		margin-top: 0;
+	}
+	50% {
+		margin-top: 10px;
+	}
+	100% {
+		margin-top: 0;
+	}
 }
