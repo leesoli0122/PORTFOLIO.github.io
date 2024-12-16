@@ -65,7 +65,7 @@ header-wrap #헤더
 *********************************************************************/
 .header-wrap { padding:15px 20px; }
 .header-wrap .back { position:absolute; top:50%; transform:translateY(-50%); width:24px; height:24px; font-size:0; background:url("../../images/common/ico-arrow-prev-header.png")no-repeat 50%/24px auto; cursor:pointer; }
-.header-wrap .title { text-align:center; }
+.header-wrap .title { text-align:center; font-weight:var(--w-extrabold); text-transform:capitalize; }
 
 /*********************************************************************
 title #제목
@@ -73,11 +73,14 @@ title #제목
 /*---------------------------------------------
 text-wrap
 ---------------------------------------------*/
-.text-wrap h2 { font-size:var(--font20); font-weight:var(--w-extrabold); text-transform:capitalize; }
+.text-wrap h2 { font-size:var(--font20); font-weight:var(--w-extrabold);  }
 .text-wrap h3 { font-size:var(--font18); }
 
 /*********************************************************************
 content #컨텐츠
-*********************************************************************//*---------------------------------------------
-	section1 #입력 폼
+*********************************************************************/
+section .inner { margin-top:45px; }
+/*---------------------------------------------
+	result-wrap #결과
 ---------------------------------------------*/
+.result-wrap .inner::before { content:""; display:block; margin:0 auto; width:100px; height:84px; background:url("../../images/common/img1.png")no-repeat 50%/100px auto; font-size:0; }
