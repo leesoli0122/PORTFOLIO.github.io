@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./resources/css/lib/reset.css" />
+
+    <script src="/test.js"></script>
+    <script src="./resources/js/lib/html2canvas.js"></script>
+    <!-- <script src="./js/main.js" defer></script> -->
+    <!-- <script src="https://kit.fontawesome.com/45976df4cd.js" crossorigin="anonymous"></script> -->
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- 이미지(로고) -->
+            <div>
+                <img src="" alt="로고" />
+                <a href="#">로고고</a>
+            </div>
+
+            <!-- 메뉴 -->
+            <div>
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#work">Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Home -->
+        <section id="home">
+            <!-- Home Data -->
+            <div>
+                <h2>
+                    안녕하세요! <br />
+                    <strong>코딩 교육 크리에이터</strong> <br />
+                    <strong>짐코딩</strong>입니다!
+                </h2>
+
+                <a href="#contact">Contact</a>
+
+                <div>
+                    <a href="https://www.youtube.com/@gymcoding" target="_blank" title="짐코딩 유튜브 링크">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/gymcoding/" target="_blank" title="짐코딩 인스타그램 링크">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/gymcoding" target="_blank" title="짐코딩 깃헙 링크">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Home Image -->
+            <div>
+                <img src="" alt="프로필 이미지" />
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About</h2>
+
+            <div>
+                <!-- 이미지 -->
+                <div>
+                    <img src="" alt="이미지" />
+                </div>
+                <!-- 문자열 -->
+                <h3>저는 이렇게 답합니다</h3>
+                <p>
+                    프로그래밍을 배우는 사람의 마음을 너무 잘 압니다. 저도 여러분과
+                    똑같은 입장이었던 적이 있기 때문입니다. 개발자로 취업 후 1년 정도
+                    다니고 퇴사를 결심한 적이 있습니다. 왜냐하면 프로그래밍을 잘 모르고
+                    취업했기 때문입니다.
+                    <br /><br />
+                    퇴사 후 학원에 다니며 하루 4시간 자면서 열심히 살았습니다. 과거로
+                    돌아가도 그때처럼 공부할 자신이 없을 정도니까요. 그리고 현재 저는
+                    인프런과 유튜브에서 웹 개발 입문자와 실무자들을 위한 웹 개발 지식을
+                    공유하고 있습니다.
+                    <br /><br />
+                    제 강의는 제가 프로그래밍을 잘 알지 못했던 시절과 개발자로서
+                    지식공유를 하며 어려움을 겪었던 분들의 입장에서 이해하기 쉽고,
+                    현업에서도 꿀리지 않도록 알차게 구성한 강의입니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+
+            <div>
+                <!-- 스킬 데이터 -->
+                <div>
+                    <h3>Profesional Skills</h3>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Accusantium quae libero delectus. Fuga tenetur quam magnam
+                        accusamus incidunt itaque assumenda voluptatum vero, animi nisi
+                        fugiat nemo debitis reprehenderit ab deleniti!
+                    </p>
+                    <div>
+                        <article>
+                            <div>
+                                <!-- icon -->
+                                <i class="fa-brands fa-html5"></i>
+                                <!-- skill name -->
+                                <span>HTML5</span>
+                            </div>
+                            <div>
+                                <!-- percentage -->
+                                <span>85%</span>
+                            </div>
+
+                            <progress id="html5" max="100" value="85"></progress>
+                        </article>
+                        <article>
+                            <div>
+                                <!-- icon -->
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <!-- skill name -->
+                                <span>CSS3</span>
+                            </div>
+                            <div>
+                                <!-- percentage -->
+                                <span>80%</span>
+                            </div>
+
+                            <progress id="css3" max="100" value="80"></progress>
+                        </article>
+                        <article>
+                            <div>
+                                <!-- icon -->
+                                <i class="fa-brands fa-js"></i>
+                                <!-- skill name -->
+                                <span>JavaScript</span>
+                            </div>
+                            <div>
+                                <!-- percentage -->
+                                <span>90%</span>
+                            </div>
+
+                            <progress id="javascript" max="100" value="90"></progress>
+                        </article>
+                        <article>
+                            <div>
+                                <!-- icon -->
+                                <i class="fa-solid fa-server"></i>
+                                <!-- skill name -->
+                                <span>Back-end</span>
+                            </div>
+                            <div>
+                                <!-- percentage -->
+                                <span>95%</span>
+                            </div>
+
+                            <progress id="backend" max="100" value="95"></progress>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- 이미지 -->
+                <div>
+                    <img src="" alt="데스크탑 이미지" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Work -->
+        <section id="work">
+            <h2>Work</h2>
+            <div>
+                <a href="https://www.gymcoding.co/courses/frontend-fly" target="_blank" title="프론트엔드 날개달기 강의">
+                    <img src="" alt="프로젝트1" />
+                </a>
+
+                <a href="https://www.gymcoding.co/courses/vue-basic" target="_blank" title="Vue3 완벽 마스터 - 기본편 강의">
+                    <img src="" alt="프로젝트2" />
+                </a>
+
+                <a href="https://www.gymcoding.co/courses/vue-practice" target="_blank" title="Vue3 완벽 마스터 - 실전편 강의">
+                    <img src="" alt="프로젝트3" />
+                </a>
+
+                <a href="https://www.gymcoding.co/courses/quasar" target="_blank" title="퀘이사 완벽 마스터 강의">
+                    <img src="" alt="프로젝트4" />
+                </a>
+
+                <a href="https://www.gymcoding.co/courses/vue-firebase" target="_blank"
+                    title="Vue3 & Firebase 커뮤니티 풀스택 강의">
+                    <img src="" alt="프로젝트5" />
+                </a>
+
+                <a href="https://www.gymcoding.co/courses/nuxt" target="_blank" title="Vue3 끝판왕 : Nuxt3 완벽 마스터">
+                    <img src="" alt="프로젝트6" />
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <div>
+                <form>
+                    <input type="text" name="name" placeholder="이름" required />
+                    <input type="text" name="subject" placeholder="제목" required />
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="내용" required></textarea>
+                    <button>보내기</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>짐코딩</p>
+        <div>
+            <a href="https://www.youtube.com/@gymcoding" target="_blank" title="짐코딩 유튜브 링크">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://www.instagram.com/gymcoding/" target="_blank" title="짐코딩 인스타그램 링크">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://github.com/gymcoding" target="_blank" title="짐코딩 깃헙 링크">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <p>Copyright &copy; 2024 짐코딩 All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
