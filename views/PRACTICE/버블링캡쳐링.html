@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../resources/css/lib/reset.css">
+
+    <script type="module">
+        import a_number from '../../resources/js/test/a.js'
+        import b_number from '../../resources/js/test/b.js'
+        console.log('a_number: ', a_number);
+        console.log('b_number: ', b_number);
+    </script>
     <style>
         html,body,main,div,p,span { padding:15px; margin:15px; text-align:center; font-weight:700; cursor:pointer; }
         html { background-color:#eee; }
@@ -22,9 +29,15 @@
                 <span>span 영역</span>
             </p>
         </div>
+        <a href="http://naver.com">네이버 이동</a>
     </main>
 
     <script>
+        const $a = document.querySelector('a');
+        $a.addEventListener('click', function(event){
+            event.preventDefault();
+        })
+
         const $body = document.querySelector('body');
         const $main = document.querySelector('main');
         const $div = document.querySelector('div');
