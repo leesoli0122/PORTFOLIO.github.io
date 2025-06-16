@@ -6,13 +6,10 @@ import './App.scss' // 전체 스타일을 관리하는 전역 scss 파일을 im
 import { ComponentMap } from '.'
 
 function App() {
-    //2번 컴포넌트 상태 정의
-    const [selectedComponent, setSelectedComponent] = useState(null) // 어떤 컴포넌트를 선택했는지를 저장하기 위한 상태. 왼쪽 목록에서 클릭 -> 오른쪽 프리뷰에 표시라는 흐름을 구현하기 위해 필수.
-
     //3번 워크리스트 정의
     // 실제로 가이드화하려는 컴포넌트 목록이며 id, name, status 정보를 포함.
     // 이 구조는 데이터 기반 UI 렌더링을 가능하게 함(map으로 반복 렌더링할 수 있도록).
-    const componentList = [
+    const [components, setComponents] = useState([
         { id: 'accordion', name: 'Accordion', status: 'todo' },
         { id: 'badge', name: 'Badge', status: 'todo' },
         { id: 'breadcrumb', name: 'Breadcrumb', status: 'todo' },
@@ -38,7 +35,11 @@ function App() {
         { id: 'tab', name: 'Tab', status: 'todo' },
         { id: 'table', name: 'Table', status: 'todo' },
         { id: 'tag', name: 'Tag', status: 'todo' }
-    ]
+    ])
+
+    //2번 컴포넌트 상태 정의
+    const [selectedComponent, setSelectedComponent] = useState(null) // 어떤 컴포넌트를 선택했는지를 저장하기 위한 상태. 왼쪽 목록에서 클릭 -> 오른쪽 프리뷰에 표시라는 흐름을 구현하기 위해 필수.
+
 
     //4번 상태 색상/텍스트 헬퍼 함수
     // 상태별 시각적 구분(badge 색상 등)과 텍스트 출력(완료, 진행중, 대기)을 통일된 로직으로 제공

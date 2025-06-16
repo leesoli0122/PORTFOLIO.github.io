@@ -1,7 +1,8 @@
-import Badge from './components/Badge/Badge'
+// index.js
+import { BadgeDemo } from './components/Badge/Badge'
 
 export const ComponentMap = {
-    badge: Badge,
+    badge: BadgeDemo,
 }
 
 
