@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>퍼블가이드</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keyword" content="" />
+    <meta name="description" content="button" />
+    <meta name="author" content="joahreum" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+    <!-- 가이드CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/guide.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css" />
+
+    <!-- 공통JS -->
+    <script type="text/javascript" src="../assets/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-ui-1.12.1.js"></script>
+    <script type="text/javascript" src="../assets/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="../assets/js/common.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        /* a요소를 클릭 했을 시 */
+        $("a.component-info").click(function () {
+          /* iframe 요소의 src 속성값을 a 요소의 data-url 속성값으로 변경 */
+
+          $("#iframe").attr("src", $(this).attr("data-url"));
+        });
+      });
+    </script>
+</head>
+<body>
+    <div id="root">
+        <header class="guide-header">
+            <h1>Design System Guide</h1>
+            <p>공통 컴포넌트 가이드 워크리스트</p>
+        </header>
+        <div class="guide-container">
+            <aside class="component-list">
+                <h2 class="status-item">Components <span id="totCnt"></span>개</h2>
+				<ul class="status-summary">
+					<li class="status-item"><span class="status-dot">완료</span> <span id="compCnt"></span>개</li>
+					<li class="status-item"><span class="status-dot">진행중</span> <span id="progressCnt"></span>개</li>
+					<li class="status-item"><span class="status-dot">대기</span> <span id="atmosphere"></span>개</li>
+				</ul>
+                <ul class="component-items">
+                    <li class="component-item non">
+                        <a class="component-info" data-url="./guide/ACCORDION.html">
+                            <span class="component-name">Accordion</span>
+                            <span class="status-badge"></span>
+                        </a>
+                    </li>
+                    <li class="component-item ing">
+                        <a class="component-info" data-url="./guide/BADGE.html">
+                            <span class="component-name">Badge</span>
+                            <span class="status-badge"></span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="iframe_view">
+                <div>
+                    <iframe id="iframe" width="100%" height="100%" src=""></iframe>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
